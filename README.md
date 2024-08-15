@@ -1,1 +1,1 @@
-# Digital-Art-Store
+# digitalArtStore.github.io
