@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Art Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Digital Art Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Discover Unique Art Canvases</h2>
+            <p>Bring your walls to life with our stunning collection of canvas art.</p>
+            <a href="#gallery" class="btn">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Our Collection</h2>
+        <div class="gallery-container">
+            <div class="art-piece">
+                <img src="art1.jpg" alt="Art 1">
+                <h3>Shadow Butterfly painting</h3>
+                <p>$150</p>
+                <button onclick="viewInRoom('art1.jpg')">View in Room</button>
+            </div>
+            <div class="art-piece">
+                <img src="art2.jpg" alt="Art 2">
+                <h3>Boy painting</h3>
+                <p>$200</p>
+                <button onclick="viewInRoom('art2.jpg')">View in Room</button>
+            </div>
+            <!-- More art pieces -->
+            <div class="art-piece">
+                <img src="art3.jpg" alt="Art 3">
+                <h3>Lord Shiva Painting</h3>
+                <p>$200</p>
+                <button onclick="viewInRoom('art3.jpg')">View in Room</button>
+            </div>
+            <div class="art-piece">
+                <img src="art4.jpg" alt="Art 4">
+                <h3>Flower painting</h3>
+                <p>$150</p>
+                <button onclick="viewInRoom('art4.jpg')">View in Room</button>
+            </div>
+            <div class="art-piece">
+                <img src="art5.jpg" alt="Art 5">
+                <h3>Pencil Butterfly art</h3>
+                <p>$250</p>
+                <button onclick="viewInRoom('art2.jpg')">View in Room</button>
+            </div>
+            <div class="art-piece">
+                <img src="art6.jpg" alt="Art 6">
+                <h3>women face art</h3>
+                <p>$200</p>
+                <button onclick="viewInRoom('art2.jpg')">View in Room</button>
+            </div>
+            <div class="art-piece">
+                <img src="art8.jpg" alt="Art 8">
+                <h3>Nature painting</h3>
+                <p>$100</p>
+                <button onclick="viewInRoom('art2.jpg')">View in Room</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About the Artist</h2>
+        <p>I am a passionate artist with a love for creating unique and captivating canvas art...</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- View in Room Modal -->
+    <div id="room-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>View in Room</h2>
+            <img id="room-view-image" src="" alt="Art in Room">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+     
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <h2>Why Choose Our Art Canvases?</h2>
+        <div class="why-choose-us-container">
+            <div class="why-choose-us-item">
+                <h3>Premium Quality</h3>
+                <p>Our canvases are made from high-quality materials, ensuring durability and a stunning finish. Each piece is crafted with care and attention to detail.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <h3>Unique Designs</h3>
+                <p>We offer a curated selection of unique and original art that you won't find anywhere else. Every piece is designed to make a statement in your space.</p>
+            </div>
+            <div class="why-choose-us-item">
+                <h3>Fast & Secure Shipping</h3>
+                <p>We ensure that your art arrives safely and quickly with our reliable shipping services. Plus, we offer worldwide shipping options.</p>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Digital Art Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
